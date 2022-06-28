@@ -9,10 +9,6 @@ import java.util.Properties;
 public class ConfigUtil {
 
 
-    /**
-     *  ConfigFactory.load() 默认加载classpath下的application.conf,application.json和application.properties文件。
-     *
-     */
 //        InputStream ins = ClassLoader.getSystemResourceAsStream("util/db.properties");
 //        Properties property = new Properties();
 //        property.load(ins);

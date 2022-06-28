@@ -21,8 +21,8 @@ public class ProducerCallbackPartitions_test {
         //1 创建 生产者对象
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
         //2.发送数据
-        for (int i = 0; i < 50; i++) {
-            producer.send(new ProducerRecord<>("first", "stepone" + i), new Callback() {
+        for (int i = 0; i < 10; i++) {
+            producer.send(new ProducerRecord<>("first",0,"", "stepone" + i), new Callback() {
                 @Override
                 public void onCompletion(RecordMetadata metadata, Exception exception) {
                     if(exception==null){

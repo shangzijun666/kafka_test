@@ -20,7 +20,7 @@ public class ProducerCallback_test {
         //1 创建 生产者对象
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
         //2.发送数据
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 500; i++) {
             producer.send(new ProducerRecord<>("first", "kafka_test" + i), new Callback() {
                 @Override
                 public void onCompletion(RecordMetadata metadata, Exception exception) {
