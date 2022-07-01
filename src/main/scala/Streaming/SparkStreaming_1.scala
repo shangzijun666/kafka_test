@@ -1,4 +1,4 @@
-package streaming
+package Streaming
 
 import org.apache.kafka.clients.consumer.{ConsumerConfig, ConsumerRecord}
 import org.apache.kafka.common.serialization.StringDeserializer
